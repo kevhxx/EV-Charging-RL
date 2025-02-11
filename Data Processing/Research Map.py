@@ -3,6 +3,7 @@ import folium
 import osmnx as ox
 from shapely.ops import unary_union
 from shapely.geometry import Polygon
+import webbrowser
 
 # Load the research area boundary
 file_path = "Research_area.geojson"
@@ -67,3 +68,6 @@ output_file = "London_Research_Area_Map.html"
 m.save(output_file)
 
 print(f"Map saved as {output_file}. Open it in a web browser to view.")
+
+
+webbrowser.open("London_Research_Area_Map.html")
