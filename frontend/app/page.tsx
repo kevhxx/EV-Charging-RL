@@ -16,8 +16,8 @@ const AnimatedNumber = ({ value, duration = 1 }) => {
   useEffect(() => {
     if (!isInView) return
 
-    let startTimestamp: number
-    const step = (timestamp: number) => {
+    let startTimestamp
+    const step = (timestamp) => {
       if (!startTimestamp) startTimestamp = timestamp
       const progress = Math.min((timestamp - startTimestamp) / (duration * 1000), 1)
       setDisplayValue(Math.floor(progress * value))
