@@ -9,8 +9,8 @@ export default function ContactPage() {
     {
       icon: <Mail className="w-8 h-8" />,
       title: "Email",
-      value: "example@evcharging.com",
-      href: "mailto:example@evcharging.com",
+      value: "example@example.com",
+      href: "mailto:example@example.com",
     },
     {
       icon: <Linkedin className="w-8 h-8" />,

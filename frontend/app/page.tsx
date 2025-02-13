@@ -16,8 +16,8 @@ const AnimatedNumber = ({ value, duration = 1 }) => {
   useEffect(() => {
     if (!isInView) return
 
-    let startTimestamp
-    const step = (timestamp) => {
+    let startTimestamp: number
+    const step = (timestamp: number) => {
       if (!startTimestamp) startTimestamp = timestamp
       const progress = Math.min((timestamp - startTimestamp) / (duration * 1000), 1)
       setDisplayValue(Math.floor(progress * value))
@@ -107,7 +107,7 @@ export default function Page() {
                 className="text-xl font-bold tracking-tighter hover:text-primary transition-colors flex items-center gap-2"
               >
                 <Zap className="w-6 h-6" />
-                EV Charging
+                Faraday Intelligent
               </Link>
 
               <div className="hidden md:flex items-center space-x-8">

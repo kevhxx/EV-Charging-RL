@@ -34,7 +34,7 @@ export default function Navbar({
             className="text-xl font-bold tracking-tighter hover:text-primary transition-colors flex items-center gap-2"
           >
             <Zap className="w-6 h-6" />
-            EV Charging
+            Faraday Intelligent
           </Link>
 
           <div className="hidden md:flex items-center space-x-8">
