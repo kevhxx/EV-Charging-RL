@@ -1,0 +1,6 @@
+/* styles/visualization.css */
+#map {
+    width: 100%;
+    height: 100vh; /* Ensure the map takes the full screen height */
+  }
+  
