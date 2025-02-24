@@ -1,0 +1,191 @@
+const suggestedStations = [
+  {
+    type: "FeatureCollection",
+    features: [
+      {
+        type: "Feature",
+        geometry: {
+          type: "Point",
+          coordinates: [-0.19819401059614014, 51.47034145809656], // Note: Mapbox uses [lng, lat]
+        },
+        properties: {
+          name: "Advised Charging Station",
+          operator: "Shell",
+          address: "445 Sulivan Ct, Peterborough Rd, London SW6 3BX",
+          usage_cost: "£1.80 + £0.30/kWh; £10.00 overstay after 65 mins",
+          connectors: [
+            { type: "Type 2", power_kw: 22 },
+            { type: "CHAdeMO", power_kw: 50 },
+            { type: "CCS", power_kw: 50 },
+          ],
+        },
+      },
+    ],
+  },
+  {
+    type: "FeatureCollection",
+    features: [
+      {
+        type: "Feature",
+        geometry: {
+          type: "Point",
+          coordinates: [-0.191455, 51.477447],
+        },
+        properties: {
+          name: "Advised Charging Station",
+          operator: "Shell",
+          address: "24A New Kings Rd, London SW6 4SA",
+          usage_cost: "£1.80 + £0.30/kWh; £10.00 overstay after 65 mins",
+          connectors: [
+            { type: "Type 2", power_kw: 22 },
+            { type: "CHAdeMO", power_kw: 50 },
+            { type: "CCS", power_kw: 50 },
+          ],
+        },
+      },
+    ],
+  },
+]
+
+const improvementStations = [
+  {
+    type: "FeatureCollection",
+    features: [
+      {
+        type: "Feature",
+        geometry: {
+          type: "Point",
+          coordinates: [-0.195952, 51.485608],
+        },
+        properties: {
+          name: "Seagrave Road Charging Point",
+          operator: "Hammersmith and Fulham Council",
+          address: "35 Seagrave Road, London, SW6 1SA",
+          Comments: "Major Underperforming station",
+          connectors: [
+            { type: "Type 2", power_kw: 22 },
+            { type: "CHAdeMO", power_kw: 50 },
+            { type: "CCS", power_kw: 50 },
+          ],
+        },
+      },
+      {
+        type: "Feature",
+        geometry: {
+          type: "Point",
+          coordinates: [-0.221589, 51.476378],
+        },
+        properties: {
+          name: "Stevenage Road Charging Point",
+          operator: "Hammersmith and Fulham Council",
+          address: "Opposite 75 Stevenage Road, London, SW6 6NP",
+          Comments: "Major Underperforming station",
+          connectors: [
+            { type: "Type 2", power_kw: 7, quantity: 3 },
+            { type: "Type 1", power_kw: 4, quantity: 3 },
+          ],
+        },
+      },
+      {
+        type: "Feature",
+        geometry: {
+          type: "Point",
+          coordinates: [-0.12911, 51.46895],
+        },
+        properties: {
+          name: "Chelsham Road Charging Point",
+          operator: "Lambeth Council",
+          address: "Chelsham Road, Lambeth, SW6 6NP",
+          connectors: [{ type: "Type 2", power_kw: 7, quantity: 2 }],
+        },
+      },
+      {
+        type: "Feature",
+        geometry: {
+          type: "Point",
+          coordinates: [-0.216314, 51.483501],
+        },
+        properties: {
+          name: "Everington Street Charging Point",
+          operator: "Hammersmith and Fulham Council",
+          address: "Opposite 56 Everington Street, London, SW6 7PL",
+          Comments: "Major Underperforming station",
+          connectors: [
+            { type: "Type 2", power_kw: 7, quantity: 2 },
+            { type: "Type 1", power_kw: 4, quantity: 2 },
+          ],
+        },
+      },
+      {
+        type: "Feature",
+        geometry: {
+          type: "Point",
+          coordinates: [-0.198331, 51.483719],
+        },
+        properties: {
+          name: "Asset No. LC 6 Charging Point",
+          operator: "Ubitricity",
+          Comments: "Major Underperforming station",
+          address: "Asset No. LC 6, London, SW6 1JX",
+          connectors: [{ type: "Type 2", power_kw: 3.7 }],
+        },
+      },
+      {
+        type: "Feature",
+        geometry: {
+          type: "Point",
+          coordinates: [-0.195912, 51.472017],
+        },
+        properties: {
+          name: "Chiddingstone St 51 Charging Point",
+          operator: "Ubitricity",
+          Comments: "Major Underperforming station",
+          address: "Chiddingstone St 51, London, SW6 3TG",
+          connectors: [{ type: "Type 2", power_kw: 3.7 }],
+        },
+      },
+      {
+        type: "Feature",
+        geometry: {
+          type: "Point",
+          coordinates: [-0.193506, 51.473018],
+        },
+        properties: {
+          name: "Perrymead St 55 Charging Point",
+          operator: "Ubitricity",
+          Comments: "Major Underperforming station",
+          address: "Perrymead St 55, London, SW6 3SN",
+          connectors: [{ type: "Type 2", power_kw: 3.7 }],
+        },
+      },
+      {
+        type: "Feature",
+        geometry: {
+          type: "Point",
+          coordinates: [-0.21674, 51.47358],
+        },
+        properties: {
+          name: "Cloncurry St 47 Charging Point",
+          operator: "Ubitricity",
+          Comments: "Major Underperforming station",
+          address: "Cloncurry St 47, London, SW6 6DT",
+          connectors: [{ type: "Type 2", power_kw: 3.7 }],
+        },
+      },
+      {
+        type: "Feature",
+        geometry: {
+          type: "Point",
+          coordinates: [-0.21739, 51.47475],
+        },
+        properties: {
+          name: "Woodlawn Rd 50 Charging Point",
+          operator: "Ubitricity",
+          Comments: "Major Underperforming station",
+          address: "Woodlawn Rd 50, London, SW6 6EU",
+          connectors: [{ type: "Type 2", power_kw: 3.7 }],
+        },
+      },
+    ],
+  },
+];
